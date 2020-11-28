@@ -1,0 +1,12 @@
+.container {
+    max-width: 120rem;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(black, .3);
+    margin: 8rem auto;
+    border-radius: 6px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1.1fr 2fr 1.1fr;
+    grid-template-rows: 10rem minmax(100rem, auto);
+}

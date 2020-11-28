@@ -1,0 +1,52 @@
+//COLOR
+$color-primary: #FBDB89;
+$color-secondary: #F48982;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+    background-size: cover;
+    min-height: 100vh;
+    color: #655A56;
+}
+
+.loader {
+    margin: 5rem auto;
+    text-align: center; 
+    
+    svg {
+      height: 5.5rem;
+      width: 5.5rem;
+      fill: #F59A83;
+      transform-origin: 44% 50%;
+      animation: rotate 1.5s infinite linear; 
+    }
+}
+  
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } 
+}

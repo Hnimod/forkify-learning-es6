@@ -1,0 +1,13 @@
+.results {
+    background-color: white;
+    padding: 3rem 0;
+
+    @include item;
+
+    &__pages {
+        padding: 0 3rem;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

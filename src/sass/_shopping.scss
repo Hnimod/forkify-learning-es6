@@ -1,0 +1,66 @@
+.shopping {
+    background-color: white;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 3rem;
+
+    &__list {
+        list-style: none;
+        margin-top: 4rem;
+        margin-bottom: auto;
+        overflow: scroll;
+        max-height: 80rem;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: max-content 1fr min-content;
+        grid-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) { margin-bottom: 2rem; }
+        &::after { 
+            content: "";
+            border-bottom: 1px solid rgb(212, 212, 212);
+            grid-column: 1 / 4;
+        }
+    }
+
+    &__item:hover &__delete {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .4rem;
+        border: 1px solid rgb(212, 212, 212);
+        width: 8rem;
+
+        input {
+            font-family: inherit;
+            font-size: 1.2rem;
+            border: none;
+            text-align: start;
+            width: 4.5rem;
+        }
+    }
+
+    &__delete {
+        color: $color-secondary;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+}
+
+.copyright {
+    color: #968B87;
+
+    a { color: currentColor; }
+}

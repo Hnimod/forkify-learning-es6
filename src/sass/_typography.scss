@@ -1,0 +1,17 @@
+%heading {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.heading-1 {
+    @extend %heading;
+
+    font-size: 2.75rem;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 1.75rem;
+    transform: skewY(-6deg);
+    color: $color-secondary;
+}

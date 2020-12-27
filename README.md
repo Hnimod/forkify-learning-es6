@@ -2,7 +2,7 @@
 
 A cooking recipes website using vanilla Javascript ES6 features, basic Webpack configuration, and Sass.
 
-https://forkify-me.web.app/
+Demo: https://forkify-me.web.app/
 
 <br/>
 
